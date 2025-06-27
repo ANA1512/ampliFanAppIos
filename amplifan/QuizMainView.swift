@@ -7,11 +7,15 @@
 
 import SwiftUI
 
-struct ContentView: View {
+
+struct QuizMainView: View {
     var body: some View {
-      QuizView()
+        QuizView()
+    }
 }
 
-#Preview {
-    QuizView()
+struct QuizMainView_Previews: PreviewProvider {
+    static var previews: some View {
+        QuizMainView()
+    }
 }

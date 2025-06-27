@@ -8,11 +8,17 @@
 import SwiftUI
 
 struct ScoreView: View {
+    let finalScore : Int
+    let restart:() -> Void
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("your score is : \(finalScore)")
+            Button("back to the quiz"){
+               restart()
+            }
+        }
     }
 }
 
-#Preview {
-    ScoreView()
-}
+
