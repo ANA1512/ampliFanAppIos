@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct profilScoreView: View {
+    
+    @EnvironmentObject var quizLogic: QuizLogic
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Score: \(quizLogic.score)")
     }
 }
 
-#Preview {
-    profilScoreView()
-}
